@@ -1,0 +1,114 @@
+@use "../util" as *;
+
+.pricing {
+  width: 100%;
+  &__card {
+    width: 100%;
+    max-width: rem(350);
+    background: var(--white);
+    box-shadow: 0 0 rem(40) rem(5) var(--neu-light-gray-blue);
+    margin-bottom: rem(24);
+    border-radius: rem(10);
+    padding: 1.5rem;
+  }
+  &__title {
+    margin: rem(12.8) 0;
+  }
+  &__cost {
+    font-size: rem(24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--neu-dark-gray-blue);
+    &--monthly {
+      display: none;
+    }
+  }
+  &__digits {
+    font-size: rem(48);
+    margin: 0 rem(8);
+  }
+  &__features {
+    padding: 0;
+    margin-bottom: rem(24);
+  }
+  &__feature {
+    padding: rem(12.8);
+    border-top: rem(1) solid var(--neu-light-gray-blue);
+  }
+  &__feature:last-of-type {
+    border-bottom: rem(1) solid var(--neu-light-gray-blue);
+  }
+  &__cta {
+    display: block;
+    background: linear-gradient(
+      to right,
+      var(--prim-line-grad-start),
+      var(--prim-line-grad-end)
+    );
+    color: var(--white);
+    text-transform: uppercase;
+    padding: rem(12);
+    letter-spacing: rem(1);
+    font-size: calc(0.85rem + 0.1vw);
+    border-radius: rem(6);
+    border: rem(2) solid var(--white);
+    &:hover,
+    &:focus-visible {
+      border: rem(2) solid var(--neu-dark-gray-blue);
+      background: none;
+      color: var(--neu-dark-gray-blue);
+      outline: var(--neu-dark-gray-blue) dotted rem(4);
+      outline-offset: rem(2);
+      opacity: 0.7;
+    }
+    &:active {
+      transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+      transform: scale(0.9);
+    }
+  }
+  &__card--highlight {
+    background: linear-gradient(
+      to bottom,
+      var(--prim-line-grad-start),
+      var(--prim-line-grad-end)
+    );
+    color: var(--white);
+  }
+  &__cta--highlight {
+    background: var(--white);
+    color: var(--neu-gray-blue);
+    &:hover,
+    &:focus-visible {
+      background: none;
+      color: var(--white);
+      border: rem(2) solid var(--white);
+      outline: var(--white) dotted rem(4);
+    }
+  }
+  &__cost--highlight {
+    color: var(--white);
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .pricing {
+    filter: drop-shadow(0 0 rem(40) var(--neu-light-gray-blue));
+    &__card {
+      margin: 0;
+      box-shadow: none;
+      max-width: rem(325);
+    }
+    &__card--highlight {
+      padding: rem(50) rem(24);
+    }
+    &__card:first-of-type {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &__card:last-of-type {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

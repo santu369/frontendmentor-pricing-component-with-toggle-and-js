@@ -1,0 +1,37 @@
+{
+  "name": "frontendmentor-pricing-component-with-toggle",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Pricing Component With Toggle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santu369/frontendmentor-pricing-component-with-toggle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "autoprefixer": "^10.2.6",
+    "browser-sync": "^2.27.4",
+    "cssnano": "^5.0.6",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.0.1",
+    "postcss": "^8.3.5",
+    "sass": "^1.35.2"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  },
+  "bugs": {
+    "url": "https://github.com/santu369/frontendmentor-pricing-component-with-toggle/issues"
+  },
+  "homepage": "https://github.com/santu369/frontendmentor-pricing-component-with-toggle#readme"
+}

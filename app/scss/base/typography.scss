@@ -1,0 +1,44 @@
+@use '../util' as *;
+
+body {
+  font-size: 15px;
+  color: var(--neu-gray-blue);
+  background-color: var(--neu-very-light-gray-blue);
+  background-image: var(--background-top), var(--background-bottom);
+  background-repeat: no-repeat, no-repeat;
+  background-size: rem(200), rem(200);
+  background-position: top right, bottom left;
+  min-width: rem(300);
+  max-width: 100%;
+  min-height: 50rem;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+h3 {
+  font-size: calc(0.85rem + 0.1vw);
+}
+
+/* screen reader only class */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  color: transparent;
+}
+
+@media only screen and (min-width: 64rem) {
+  body {
+    background-size: auto, auto;
+  }
+}

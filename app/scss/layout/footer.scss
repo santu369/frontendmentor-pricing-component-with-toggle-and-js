@@ -1,0 +1,24 @@
+@use '../util' as *;
+
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--neu-gray-blue);
+  &__section {
+    margin-top: 1rem;
+  }
+  &__link {
+    color: var(--prim-line-grad-end);
+    &:hover,
+    &:focus-visible {
+      outline: var(--neu-dark-gray-blue) dotted rem(3) !important;
+      outline-offset: 0.25rem;
+      color: var(--neu-dark-gray-blue);
+    }
+    &:focus:not(:focus-visible) {
+      outline: transparent;
+    }
+  }
+}
